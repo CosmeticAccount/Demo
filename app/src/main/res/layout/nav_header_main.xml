@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:theme="@style/ThemeOverlay.AppCompat.Dark"
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="@dimen/_200sdp"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:id="@+id/img_header_bg"
+        n1:layout_width="fill_parent"
+        n1:layout_height="match_parent"
+        n1:src="@drawable/logo"
+        n1:adjustViewBounds="true"
+        n1:scaleType="fitXY"
+        n1:layout_centerInParent="true" />
+
+    <TextView
+        n1:textSize="@dimen/_13sdp"
+        n1:textStyle="bold"
+        n1:textColor="@color/white"
+        n1:id="@+id/name"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="@dimen/_10sdp"
+        n1:layout_marginBottom="@dimen/_2sdp"
+        n1:text="Hey Ravinder"
+        n1:layout_alignBottom="@+id/img_header_bg"/>
+
+    <ImageView
+        n1:id="@+id/image_button"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginRight="@dimen/_10sdp"
+        n1:layout_marginBottom="@dimen/_2sdp"
+        n1:layout_alignBottom="@+id/img_header_bg"
+        n1:layout_alignParentRight="true"
+        n2:srcCompat="@drawable/ic_keyboard_arrow_right_24dp"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

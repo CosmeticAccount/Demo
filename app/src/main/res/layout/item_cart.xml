@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_marginLeft="@dimen/_10sdp">
+
+        <ImageView
+            n1:id="@+id/Img_delete"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="right"
+            n1:background="@null"
+            n1:contentDescription="@drawable/closes"
+            n1:src="@drawable/closes"
+            n1:layout_alignParentRight="true"/>
+
+        <TextView
+            n1:textSize="@dimen/_12sdp"
+            n1:id="@+id/txt_name"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/_15sdp"
+            n1:text="Crispy Chicken garlic periperi pizza" />
+
+        <TextView
+            n1:id="@+id/txt_rupddcce"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginBottom="@dimen/_15sdp"
+            n1:layout_marginTop="@dimen/_12sdp"
+            n1:text="14.99 $"
+            n1:layout_below="@+id/txt_name"
+            n1:textSize="@dimen/_12sdp"
+            n1:textColor="@color/colorPrimary"/>
+        <LinearLayout
+            n1:gravity="right"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignBottom="@+id/txt_rupddcce"
+            n1:layout_alignParentRight="true"
+            n1:layout_marginRight="@dimen/_10sdp">
+            <ImageView
+                n1:layout_gravity="center_vertical"
+                n1:id="@+id/btn_minus"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/remove_innactive" />
+
+            <TextView
+                n1:textSize="@dimen/_16sdp"
+                n1:textColor="@color/black"
+                n1:layout_gravity="center_vertical"
+                n1:id="@+id/edit_text"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="@dimen/_10sdp"
+                n1:layout_marginRight="@dimen/_10sdp"
+                n1:text="1" />
+
+            <ImageView
+                n1:layout_gravity="center_vertical"
+                n1:id="@+id/btn_plus"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/add_inactive" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

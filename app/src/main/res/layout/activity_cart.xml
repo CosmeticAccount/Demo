@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        n1:id="@+id/toolbar"
+        n1:background="@color/colorPrimary"
+        n1:layout_width="fill_parent"
+        n1:layout_height="?actionBarSize"
+        n2:contentInsetLeft="0.0dip"
+        n2:contentInsetStart="0.0dip"
+        n2:contentInsetStartWithNavigation="0.0dip"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+
+    <ListView
+        n1:id="@+id/ListViewCatalog"
+        n1:layout_width="fill_parent"
+        n1:layout_height="match_parent"
+        n1:layout_marginTop="0dp"
+        n1:layout_below="@+id/toolbar"
+        n1:divider="@color/white"
+        n1:cacheColorHint="#ffffff"
+        n1:visibility="visible"
+        n1:layout_above="@+id/button_layout"
+        n1:clickable="true" />
+
+    <TextView
+        n1:id="@+id/ssd"
+        n1:layout_width="match_parent"
+        n1:layout_height="match_parent"
+        n1:gravity="center"
+        n1:padding="@dimen/_10sdp"
+        n1:textSize="@dimen/_18sdp"
+        n1:visibility="gone"
+        n1:text="Your Cart empty"
+        n1:textColor="#000000"/>
+
+    <LinearLayout
+        n1:id="@id/button_layout"
+        n1:background="@color/colorPrimary"
+        n1:layout_width="fill_parent"
+        n1:layout_height="?actionBarSize"
+        n1:baselineAligned="false"
+        n1:weightSum="2.0"
+        n1:layout_alignParentBottom="true">
+
+        <TextView
+            n1:textColor="@color/white"
+            n1:gravity="center_vertical"
+            n1:layout_gravity="center_vertical"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_marginLeft="@dimen/_10sdp"
+            n1:text="@string/proceed"
+            n1:layout_weight="1.0" />
+
+        <LinearLayout
+            n1:gravity="center|right"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="1.0">
+
+            <TextView
+                n1:textColor="@color/white"
+                n1:layout_gravity="center_vertical"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginRight="@dimen/_10sdp"
+                n1:text="Total" />
+
+            <TextView
+                n1:textStyle="bold"
+                n1:textColor="@color/yellow"
+                n1:layout_gravity="center_vertical"
+                n1:id="@+id/total"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginRight="@dimen/_5sdp"
+                n1:text="00.00 " />
+
+            <ImageView
+                n1:layout_width="wrap_content"
+                n1:layout_height="@dimen/_48sdp"
+                n1:layout_marginRight="@dimen/_5sdp"
+                n3:srcCompat="@drawable/ic_keyboard_arrow_right_white_24dp"
+                xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

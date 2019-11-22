@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="splash_background_color">#AC6B67</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#F0DE0A</color>
+    <color name="peach">#AC6B67</color>
+    <color name="pink">#AA638F</color>
+    <color name="brown">#AB8F78</color>
+
+
+
+
+</resources>

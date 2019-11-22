@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout n1:id="@+id/drawer_layout"
+    n1:fitsSystemWindows="true"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+
+    <include
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        layout="@layout/app_bar_main" />
+
+    <com.google.android.material.navigation.NavigationView
+        n1:layout_gravity="start"
+        n1:id="@+id/nav_view"
+        n1:fitsSystemWindows="true"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n2:headerLayout="@layout/nav_header_main"
+        n2:itemTextColor="@color/white"
+        n1:background="#00132E"
+        n2:menu="@menu/activity_main_drawer"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</androidx.drawerlayout.widget.DrawerLayout>
+<!--
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:layout_centerHorizontal="true" >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>-->
